@@ -1,0 +1,14 @@
+@media not screen and (max-width: 1356px) {
+    .description h3 {
+        text-indent: 25px;
+        margin-left: -70%;
+        margin-right: -70%;
+    }
+
+    .description p {
+        /*text-indent: 25px;*/
+        margin-left: -70%;
+        margin-right: -70%;
+        text-align:  justify;
+    }
+}
