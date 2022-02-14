@@ -1,11 +1,15 @@
 
 var inputs_value = [0,0,0,0];
+var last_input = 0
 ymaps.ready(['AnimatedLine']).then(init);
+var myMap,
+    myPlacemark;
+
 function init(ymaps) {
     // Создаем карту.
-    var myPlacemark, myMap = new ymaps.Map("map", {
+    myPlacemark, myMap = new ymaps.Map("map", {
         center: [53.71556, 91.42917],
-        zoom: 15, color: "#f652a0"
+        zoom: 13, color: "#f652a0"
     }, {
         searchControlProvider: 'yandex#search'
     });
@@ -26,7 +30,7 @@ function init(ymaps) {
         counter+=1;
 
 
-let etapred = 0;
+    let etapred = 0;
 // alert(unputs_value[0])
         if (counter==1){
             var firstPoint = new ymaps.Placemark(coords[0], {iconContent: 'start'}, {
@@ -62,7 +66,8 @@ let etapred = 0;
                     "start_lat": coords[0][0],
                     "start_lon": coords[0][1],
                     "end_lat": coords[1][0],
-                    "end_lon": coords[1][1]
+                    "end_lon": coords[1][1],
+                    "type": last_input
                 })
             }).then((response) => {
                 return response.json();
@@ -118,7 +123,6 @@ let etapred = 0;
     
     function generate_lines(data){
 
-
         var colors = ["#3EEAD6","#88E067","#EDD35F","#D99571","#F881DA","#8189E3","#4C4047"];
 
         for(let i=0; i<data.length; i++){
@@ -172,7 +176,7 @@ let etapred = 0;
 
     function map_print(data, map_num) {
         //alert("test button pushed");
-        var colors = ["#3EEAD6","#88E067","#EDD35F","#D99571","#F881DA","#8189E3","#4C4047"];
+        var colors = ["#3EEAD6","#88E067","#edd35f","#d99571","#F881DA","#8189E3","#4C4047"];
 
         //for(let i=0; i<data.length; i++){
 
@@ -192,6 +196,18 @@ let etapred = 0;
 }
 
 
+function to_Abakan() {
+    myMap.setCenter([53.71556, 91.42917], 13, {
+        checkZoomRange: true
+    });
+}
+
+function to_Omsk() {
+    myMap.setCenter([54.99244, 73.36859], 12, {
+        checkZoomRange: true
+    });
+}
+
 
 function input1() {
     //alert(inputs_value[0]);
@@ -202,25 +218,27 @@ function input1() {
 function input2() {
     //alert(inputs_value[0]);
     inputs_value[1] =  1;
+    last_input = 0
     //   alert(inputs_value);
 }
 
 function input3() {
     //alert(inputs_value[0]);
     inputs_value[0] =  1;
+    last_input = 1
     //  alert(inputs_value);
 }
 
 function input4() {
     //alert(inputs_value[0]);
     inputs_value[3] =  1;
+    last_input = 2
     //  alert(inputs_value);
 }
 
 function input5() {
     //alert(inputs_value[0]);
     inputs_value = [0,0,0,0];
-
 }
 
 
