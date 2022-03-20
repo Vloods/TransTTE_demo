@@ -28,8 +28,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 BASE = Path(os.path.realpath(__file__)).parent
-dijkstra = DijkstraPath(BASE / 'data/dijkstra.pickle', BASE / 'data/clear_nodes.pkl')
-etainf = ETAInf(BASE / 'data/SimpleTTE.pth', BASE / 'data/meteoData.csv', BASE / 'data/dgi_sage_abakan_5_5_5_relu_relu_relu_200e_mean_pool_0.0114.csv')
+dijkstra_abakan = DijkstraPath(BASE / 'data/dijkstra.pickle', BASE / 'data/clear_nodes.pkl')
+dijkstra_omsk = DijkstraPath(BASE / 'data/graph_omsk.pkl', BASE / 'data/clear_nodes_omsk.pkl')
+etainf_abakan = ETAInf(BASE / 'data/SimpleTTE.pth', BASE / 'data/meteoData.csv', BASE / 'data/dgi_sage_abakan_5_5_5_relu_relu_relu_200e_mean_pool_0.0114.csv')
+#etainf_omsk = ETAInf(BASE / 'data/omskSimpleTTE.pth', BASE / 'data/meteoData.csv', BASE / 'data/dgi_sage_omsk_5_5_5_relu_relu_relu_140e_0.0094.csv')
 weights_dict = {}
 for weight in sorted((BASE / 'data/weights').iterdir()):
     print(weight)
@@ -42,7 +44,7 @@ class Points(BaseModel):
     start_lon: float = 37.6373427
     end_lat: float = 55.6217188
     end_lon: float = 37.49859
-
+    type: int = 0
 
 class PointsTyped(BaseModel):
     start_lat: float = 55.7809453
@@ -64,15 +66,25 @@ def return_path(points: Points):
     Формат возвращаемых данных:
     """
     logger.info(points)
-    if not all(map(lambda x: 0 <= x[1] <= 180, points)):
-        raise HTTPException(status_code=400, detail="Every coordinate should be in 0..180")
+#    if not all(map(lambda x: 0 <= x[1] <= 180, points[:-1])):
+#        raise HTTPException(status_code=400, detail="Every coordinate should be in 0..180")
+    city = "omsk" if (54.2732000 < points.start_lat < 55.6869000) and (71.5018000 < points.start_lon < 75.7040000) else "abakan"
     response = []
-    for name, weights in weights_dict.items():
-        p, path = dijkstra.get_shortest_path((points.start_lat, points.start_lon), (points.end_lat, points.end_lon), weights)
-        etapred = etainf.forward(p, points, path[1][:2], path[1][-2:])
-        dict_ = {'path': path[1][:-1], 'eta': etapred, 'type': name}
-        response.append(dict_)
-        #print(path[0])
+    if int(points.type) == 0:
+        name = "dist"
+        weights = weights_dict["1dist"] if city == "abakan" else weights_dict["dist_omsk"]
+    if int(points.type) == 1:
+        name = "green"
+        weights = weights_dict["2green_abakan"] if city == "abakan" else weights_dict["green_omsk"]
+    if int(points.type) == 2:
+        name = "hist"
+        weights = weights_dict["3hist_abakan"] if city == "abakan" else weights_dict["green_omsk"]
+
+    p, path = dijkstra_abakan.get_shortest_path((points.start_lat, points.start_lon), (points.end_lat, points.end_lon), weights)
+    etapred = etainf_abakan.forward(p, points, path[1][:2], path[1][-2:])
+    dict_ = {'path': path[1][:-1], 'eta': etapred, 'type': name}
+    response.append(dict_)
+
     return response
 
 
