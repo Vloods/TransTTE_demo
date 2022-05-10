@@ -1,19 +1,44 @@
+Задачи:
+
+Добавить reqs.txt 
+Добавить данные -- ссылка + пароль.
+
 # TransTTE
 
-Представленный пайплайн позволяет валидировать и уточнять алгоритмы построения кратчайшего маршрута посредством использования гибридной графовой модели машинного обучения. Основным назначением программы является оценка маршрутов для самокатов по метрикам затрачиваемого на поездку времени, живописности окружающего ландшафта и безопасности с целью улучшения пользовательского опыта.
+Welcome to the official repo of the TransTTE model -- transformer-based travel time estimation algorithm. Here we present the source code for PKDD'22 demo track paper "Logistics, Graphs, and Transformers: Towards improving Travel Time Estimation".
+
+Natalia Semenova, Artyom Sosedka, Vladislav Tishin, Vladislav Zamkovoy, [Vadim Porvatov](https://www.researchgate.net/profile/Vadim-Porvatov)
+
+arXiv PDF: _to be added_.
 
 # Prerequisites
 
 # Datasets
 
+Tables.
+
 # Model running
 
 # License
 
+Уточнить лицензию.
+
+# Contact us
+
+If you have some questions about the code, you are welcome to open an issue, I will respond to that as soon as possible.
+
 # Citation
 
+```
+To be added
+```
 
 # OLD
+
+
+Представленный пайплайн позволяет валидировать и уточнять алгоритмы построения кратчайшего маршрута посредством использования гибридной графовой модели машинного обучения. Основным назначением программы является оценка маршрутов для самокатов по метрикам затрачиваемого на поездку времени, живописности окружающего ландшафта и безопасности с целью улучшения пользовательского опыта.
+
+
 # Структура репозитория
 - `algorithms` - ноутбуки и скирпты для вызова тех или иных алгоритмов
 - `preprocessing` - ноутбуки для препроцессинга данных
