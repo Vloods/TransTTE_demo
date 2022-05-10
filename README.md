@@ -1,8 +1,3 @@
-Задачи:
-
-Добавить reqs.txt 
-Добавить данные -- ссылка + пароль.
-
 # TransTTE
 
 Welcome to the official repo of the TransTTE model -- transformer-based travel time estimation algorithm. Here we present the source code for PKDD'22 demo track paper "Logistics, Graphs, and Transformers: Towards improving Travel Time Estimation".
@@ -13,9 +8,13 @@ arXiv PDF: _to be added_.
 
 # Prerequisites
 
+Добавить reqs.txt 
+
 # Datasets
 
 Tables.
+
+Добавить данные -- ссылка + пароль.
 
 # Model running
 
