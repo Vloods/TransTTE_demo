@@ -19,6 +19,8 @@ Tables.
 
 # Model running
 
+# Application details
+
 # License
 
 Уточнить лицензию.
