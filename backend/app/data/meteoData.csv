@@ -1,6 +1,0 @@
-day;temp;pressure;windDir(from);windSpeed;weather;cloud;temp;pressure;windDir(from);windSpeed;weather;cloud
-1;0;734;270;1;0;10;-2;735;270;1;0;10
-2;-3;740;180;1;0;10;-3;743;180;1;0;10
-3;-3;745;135;1;0;10;-5;745;135;1;2;3
-4;-3;746;0;1;0;5;-5;748;0;1;0;10
-6;-7;739;135;1;2;10;-6;740;135;1;0;5

@@ -43,6 +43,32 @@ class DijkstraPath:
             # edge_ids.append(int(self.nodes[path[i]]['id']))
         return path, (edge_ids, cor_path)
 
+    def get_shortest_path_grph(self, cor1: Tuple[float, float], cor2: Tuple[float, float], weights):
+            _, idx1 = self.tree.query([[cor1[0] * np.pi / 180, cor1[1] * np.pi / 180]], k=1)
+            _, idx2 = self.tree.query([[cor2[0] * np.pi / 180, cor2[1] * np.pi / 180]], k=1)
+
+            self.g.es["weight"] = list(weights)
+            path = self.g.get_shortest_paths(idx1[0][0], to=idx2[0][0], mode=OUT, weights=weights)[0]
+            cor_path = [] 
+            for i in range(len(path)):
+                cor_path.append([float(self.nodes[path[i]]['lat']), float(self.nodes[path[i]]['lon'])])
+
+
+            edge_ids = []
+            for i in range(len(path)-1):
+                edge_ids.append(self.g.get_eid(path[i], path[i + 1]))
+            
+            if len(path) > 0:
+                time = 0
+                for e in path:
+                    time += self.g.es[e]["weight"]
+                print("Shortest weighted time is: ", time)
+            else:
+                print("End node could not be reached!")
+            return path, (edge_ids, cor_path), time
+                
+            
+                
 def get_eta_determin(edges):
     time_ = 0
     for edge_id in edges:

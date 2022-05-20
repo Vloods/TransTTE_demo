@@ -16,6 +16,7 @@ class ETAInf:
         self.model.eval()
         
     def preprocess_route(self, route, points, st_edge_cors, fin_edge_cors):
+        print('st_edge_cors', st_edge_cors)
         start_perp = get_perp(st_edge_cors[0][0], st_edge_cors[0][1], st_edge_cors[1][0], st_edge_cors[1][1], points.start_lat, points.start_lon)
         start_perp = start_perp if start_perp is not None else [st_edge_cors[0][0], st_edge_cors[0][1]]
         dist_to_a = haversine_np(start_perp[1], start_perp[0], points.start_lon, points.start_lat)
