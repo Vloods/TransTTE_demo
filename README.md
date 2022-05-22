@@ -1,7 +1,7 @@
 # TransTTE
 
-![Pipeline_image](resources/transtte_pipeline_wh.pnggh-light-mode-only)
-![Pipeline_image](resources/images/transtte_pipeline_bl.png#gh-dark-mode-only)
+![Pipeline_image](resources/transtte_pipeline_wh.png#gh-light-mode-only)
+![Pipeline_image](resources/transtte_pipeline_bl.png#gh-dark-mode-only)
 
 Welcome to the official repo of the TransTTE model -- transformer-based travel time estimation algorithm. Here we present the source code for PKDD'22 demo track paper "Logistics, Graphs, and Transformers: Towards improving Travel Time Estimation".
 
@@ -13,21 +13,48 @@ arXiv PDF: _to be added_.
 
 # Prerequisites
 
-Добавить reqs.txt 
+```
+torch==1.9.1
+...
+```
 
 # Datasets
 
-Tables.
+<table>
+<tr><th>Road network</th><th>Trips</th></tr>
+<tr><td>
 
-Добавить данные -- ссылка + пароль.
+| | Abakan | Omsk |
+|--|--|--|
+|Nodes| - | - |
+|Edges| - | - |
+|Clustering| - | - |
+|Diameter| - | - |
+ 
+</td><td>
+
+| | Abakan | Omsk |
+|--|--|--|
+|Trips number|  | - |
+|Coverage| - | - |
+|Average time| - | - |
+|Average length| - | - |
+
+</td></tr> </table>
+
+Provided data could be used for research purposes only. If you want to incorporate it in your study, please send request to semenova.bnl@gmail.com.
 
 # Model running
 
+To be defined.
+
 # Application details
+
+To be defined.
 
 # License
 
-Уточнить лицензию.
+To be defined.
 
 # Contact us
 
@@ -55,8 +82,6 @@ To be added
 - Запустите `backend/app/dijkstra_inference.py` с координатами и требуемыми весами из `backend/app/data/weights`
 - Вы получите два массива, второй - координаты путей
 - Если необходимо, запустите `inference_ETA.py` по примеру для получения ETA
-## Pipeline
-![image](https://i.imgur.com/PdSrogz.png)
 
 ## Архитектура предиктивной модели ETA
 
