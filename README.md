@@ -20,6 +20,8 @@ torch==1.9.1
 
 # Datasets
 
+We provide two datasets corresponding to the cities of Abakan and Omsk. For each of these datasets, there are two types of target values -- real travel time (considered in this study) and real length of trip. 
+
 <table>
 <tr><th>Road network</th><th>Trips</th></tr>
 <tr><td>
