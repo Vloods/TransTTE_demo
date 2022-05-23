@@ -13,10 +13,14 @@ arXiv PDF: _to be added_.
 
 # Prerequisites
 
+For the backend:
+
 ```
 torch==1.9.1
 ...
 ```
+
+For the Graphormer model:
 
 # Datasets
 
