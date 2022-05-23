@@ -32,19 +32,19 @@ We provide two datasets corresponding to the cities of Abakan and Omsk. For each
 
 | | Abakan | Omsk |
 |--|--|--|
-|Nodes| - | - |
-|Edges| - | - |
-|Clustering| - | - |
-|Diameter| - | - |
+|Nodes| 65524 | 231688 |
+|Edges| 340012 |  1149492 |
+|Clustering| 0.5278 | 0.53 |
+|Usage median| 12 | 8 |
  
 </td><td>
 
 | | Abakan | Omsk |
 |--|--|--|
-|Trips number|  | - |
-|Coverage| - | - |
-|Average time| - | - |
-|Average length| - | - |
+|Trips number|  119986 | 120000 |
+|Coverage| 0.535 |  0.392 |
+|Average time| 433.61 | 622.67 |
+|Average length| 3656.34 | 4268.72 |
 
 </td></tr> </table>
 
