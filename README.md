@@ -56,7 +56,7 @@ To be defined.
 
 # License
 
-To be defined.
+Established code released as open-source software under the MIT license.
 
 # Contact us
 
