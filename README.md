@@ -22,6 +22,11 @@ torch==1.9.1
 
 For the Graphormer model:
 
+# Download models, data and weights
+- Download models:
+- Download data:
+- Download weights:
+
 
 # How to run Visual Tool
 - Install and run Docker
