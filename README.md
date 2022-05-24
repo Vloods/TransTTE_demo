@@ -33,7 +33,10 @@ For the Graphormer model:
 - Install and run Docker
 - Build Docker image with graphormer/Dockerfile using docker build . -t graphormer
 - Run Docker container using docker run --rm -it -p 80:80 graphormer
-- Launch graphormer/app/test_api.ipynb. With this notebook you can use graphormer and customize start and end points to predict travel time. 
+- Run python script to get times for each edge. Visual tool use this times in order to find shortest way between two points.
+     Python script:
+      r = requests.post('http://0.0.0.0:80/get_weights', headers = {'Content-Type': 'application/json'})
+      weights_dict = r.json()
 
 
 # Datasets
