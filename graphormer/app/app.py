@@ -100,22 +100,10 @@ def ping():
     return {'ping': 'pong'}
 
 
-@app.post('/get_path')
-def return_weights(points: Points):
-    # print('staaart')
-    # if check_town(points) == 'abakan':
-    #     print('abakan')
-    #     weights = weights_abakan
-    #     # print(weights)
-    # elif check_town(points) == 'omsk':
-    #     print('omsk')
-    #     weights = weights_omsk
-    #     # print(weights)
-    # else:
-    #     print('ERROR!!!')
-    #     raise HTTPException(status_code=400, detail="Wrong coordinates (should be Omsk or Abakan)")
+@app.post('/get_weights')
+def return_weights():
     return weights_dict
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host='0.0.0.0', port=3006)
+    uvicorn.run(app, host='0.0.0.0', port=80)
