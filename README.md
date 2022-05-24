@@ -22,6 +22,20 @@ torch==1.9.1
 
 For the Graphormer model:
 
+
+# How to run Visual Tool
+- Install and run Docker
+- Build Docker image with backend/Dockerfile using docker build . -t visual
+- Run Docker container using docker run --rm -it -p 80:80 visual
+- Go to http://127.0.0.1:80/ 
+
+# How to run Graphormer
+- Install and run Docker
+- Build Docker image using docker build . -t iris_server
+- Run Docker container using docker run --rm -it -p 80:80 iris_server
+- Go to http://127.0.0.1:80/docs to see all available methods of the API
+
+
 # Datasets
 
 We provide two datasets corresponding to the cities of Abakan and Omsk. For each of these datasets, there are two types of target values -- real travel time (considered in this study) and real length of trip. 
