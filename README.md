@@ -31,9 +31,9 @@ For the Graphormer model:
 
 # How to run Graphormer
 - Install and run Docker
-- Build Docker image using docker build . -t iris_server
-- Run Docker container using docker run --rm -it -p 80:80 iris_server
-- Go to http://127.0.0.1:80/docs to see all available methods of the API
+- Build Docker image with graphormer/Dockerfile using docker build . -t graphormer
+- Run Docker container using docker run --rm -it -p 80:80 graphormer
+- Launch graphormer/app/test_api.ipynb. With this notebook you can use graphormer and customize start and end points to predict travel time. 
 
 
 # Datasets
