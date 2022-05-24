@@ -7,7 +7,7 @@ Welcome to the official repo of the TransTTE model -- transformer-based travel t
 
 Natalia Semenova, Artyom Sosedka, Vladislav Tishin, Vladislav Zamkovoy, [Vadim Porvatov](https://www.researchgate.net/profile/Vadim-Porvatov)
 
-You can access inference of our model at [transtte.online](https://transtte.online).
+You can access inference of our model at [transtte.online](http://transtte.online:9103).
 
 arXiv PDF: _to be added_.
 
