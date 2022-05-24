@@ -34,7 +34,9 @@ For the Graphormer model:
 - Build Docker image with graphormer/Dockerfile using docker build . -t graphormer
 - Run Docker container using docker run --rm -it -p 80:80 graphormer
 - Run python script to get times for each edge. Visual tool use this times in order to find shortest way between two points.
+     
      Python script:
+      
       r = requests.post('http://0.0.0.0:80/get_weights', headers = {'Content-Type': 'application/json'})
       weights_dict = r.json()
 
