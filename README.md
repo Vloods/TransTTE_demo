@@ -24,12 +24,11 @@ For the Graphormer model:
 # Local test:
 
 ##    Prepare repository, models, data and weights:
-     - Clone repository:
-     git clone https://github.com/Vloods/TransTTE_demo
+     - Clone repository: git clone https://github.com/Vloods/TransTTE_demo
      
-     - [Download](https://...) models and put it in..
-     - [Download](https://...) data and put it in..
-     - [Download](https://...) weights and put it in..
+- Download [models](https://kokoko.com) and put it in..
+- Download [data](https://kokoko.com) and put it in..
+- Download [weights](https://kokoko.com) and put it in..
 
 
 ##    How to run Visual Tool:
@@ -44,8 +43,7 @@ For the Graphormer model:
      - Run Docker container using docker run --rm -it -p 80:80 graphormer
      - Run python script to get times for each edge. Visual tool use this times in order to find shortest way between two points.
      
-     Python script:
-      
+####  Python script:
       r = requests.post('http://0.0.0.0:80/get_weights', headers = {'Content-Type': 'application/json'})
       weights_dict = r.json()
 
