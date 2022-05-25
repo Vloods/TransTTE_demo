@@ -23,19 +23,19 @@ torch==1.9.1
 For the Graphormer model:
 # Local test:
 
-#    Download models, data and weights:
+##    Download models, data and weights:
      - Download models:
      - Download data:
      - Download weights:
 
 
-#    How to run Visual Tool:
+##    How to run Visual Tool:
      - Install and run Docker
      - Build Docker image with backend/Dockerfile using docker build . -t visual
      - Run Docker container using docker run --rm -it -p 80:80 visual
      - Go to http://127.0.0.1:80/ 
 
-#    How to run Graphormer
+##    How to run Graphormer
      - Install and run Docker
      - Build Docker image with graphormer/Dockerfile using docker build . -t graphormer
      - Run Docker container using docker run --rm -it -p 80:80 graphormer
