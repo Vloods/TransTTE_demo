@@ -25,12 +25,11 @@ For the Graphormer model:
 
 ##    Prepare repository, models, data and weights:
      - Clone repository:
-     
      git clone https://github.com/Vloods/TransTTE_demo
      
-     - Download models:
-     - Download data:
-     - Download weights:
+     - [Download](https://...) models and put it in..
+     - [Download](https://...) data and put it in..
+     - [Download](https://...) weights and put it in..
 
 
 ##    How to run Visual Tool:
