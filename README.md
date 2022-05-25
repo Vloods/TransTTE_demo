@@ -23,7 +23,11 @@ torch==1.9.1
 For the Graphormer model:
 # Local test:
 
-##    Download models, data and weights:
+##    Prepare repository, models, data and weights:
+     - Clone repository:
+     
+     git clone https://github.com/Vloods/TransTTE_demo
+     
      - Download models:
      - Download data:
      - Download weights:
