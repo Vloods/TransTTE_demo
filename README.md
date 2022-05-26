@@ -26,8 +26,9 @@ For the Graphormer model:
 ##    Prepare repository, data and weights:
      - Clone repository: git clone https://github.com/Vloods/TransTTE_demo
      
-- Download [data](https://disk.yandex.ru/d/SrQo6jW5GS_n8A) and put it in..
-- Download [weights](https://disk.yandex.ru/d/wDoXLVr0PsXg_Q) and put it in..
+- Download [backend data](https://disk.yandex.ru/d/NHj3ukteUGn-dAA) and put it in backend/app/data
+- Download [graphormer datasets](https://disk.yandex.ru/d/RgWiqN7DwXcJOw) and put it in graphormer/app/datasets
+- Download [graphormer models](https://disk.yandex.ru/d/rQCIJs_7Q7Li6g) and put it in graphormer/app/models
 
 
 ##    How to run Visual Tool:
