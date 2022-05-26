@@ -13,14 +13,32 @@ arXiv PDF: _to be added_.
 
 # Prerequisites
 
-For the backend:
-
 ```
-torch==1.9.1
+torch==1.9.1+cu111
+torchaudio 
+fastapi
+pydantic
+uvicorn
+pandas
+sklearn
+python-igraph
+loguru
+lmdb
+torch-scatter==2.0.9 
+torch-sparse==0.6.12 
+torch-geometric==1.7.2
+tensorboardX==2.4.1
+ogb==1.3.2
+rdkit-pypi==2021.9.3
+dgl==0.7.2 
+igraph
+fairseq
+setuptools==59.5.0
+numpy
+requests
 ...
 ```
 
-For the Graphormer model:
 # Local test:
 
 ##    Prepare repository, data and weights:
