@@ -13,6 +13,13 @@ arXiv PDF: _to be added_.
 
 # Prerequisites
 
+**Backend:**
+
+
+**Model:**
+
+
+
 ```
 torch==1.9.1+cu111
 torchaudio 
@@ -41,7 +48,7 @@ requests
 # Local test
 
 **Prepare repository, data and weights:**
-- Clone repository: git clone https://github.com/Vloods/TransTTE_demo
+- Clone repository: ```git clone https://github.com/Vloods/TransTTE_demo```
 - Download [backend data](https://disk.yandex.ru/d/NHj3ukteUGn-dAA) and put it in backend/app/data
 - Download [graphormer datasets](https://disk.yandex.ru/d/RgWiqN7DwXcJOw) and put it in graphormer/app/datasets
 - Download [graphormer models](https://disk.yandex.ru/d/rQCIJs_7Q7Li6g) and put it in graphormer/app/models
@@ -49,14 +56,14 @@ requests
 
 **How to run Visual Tool:**
 - Install and run Docker
-- Build Docker image with backend/Dockerfile via run command "docker build . -t visual" in terminal
-- Run Docker container via run "docker run --rm -it -p 80:80 visual" in terminal
+- Build Docker image with backend/Dockerfile via run command ```docker build . -t visual" in terminal```
+- Run Docker container via run ```docker run --rm -it -p 80:80 visual``` in terminal
 - Go to http://127.0.0.1:80/ 
 
 **How to run Graphormer:**
 - Install and run Docker
-- Build Docker image with graphormer/Dockerfile via run "docker build . -t graphormer" in terminal
-- Run Docker container via run "docker run --rm -it -p 80:80 graphormer" in terminal
+- Build Docker image with graphormer/Dockerfile via run ```docker build . -t graphormer``` in terminal
+- Run Docker container via run ```docker run --rm -it -p 80:80 graphormer``` in terminal
 - Run python script to get times for each edge. Visual tool use this times in order to find the shortest way between two points.
      
 ####  Python script:
