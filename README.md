@@ -38,7 +38,7 @@ numpy
 requests
 ```
 
-# Local test:
+# Local test
 
 ##    Prepare repository, data and weights:
      - Clone repository: git clone https://github.com/Vloods/TransTTE_demo
@@ -92,14 +92,6 @@ We provide two datasets corresponding to the cities of Abakan and Omsk. For each
 </td></tr> </table>
 
 Provided data could be used for research purposes only. If you want to incorporate it in your study, please send request to semenova.bnl@gmail.com.
-
-# Model running
-
-To be defined.
-
-# Application details
-
-To be defined.
 
 # License
 
