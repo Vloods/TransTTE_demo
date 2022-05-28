@@ -51,13 +51,13 @@ requests
 - Install and run Docker
 - Build Docker image with backend/Dockerfile via run command "docker build . -t visual" in terminal
 - Run Docker container via run "docker run --rm -it -p 80:80 visual" in terminal
- - Go to http://127.0.0.1:80/ 
+- Go to http://127.0.0.1:80/ 
 
 **How to run Graphormer:**
-     - Install and run Docker
-     - Build Docker image with graphormer/Dockerfile via run "docker build . -t graphormer" in terminal
-     - Run Docker container via run "docker run --rm -it -p 80:80 graphormer" in terminal
-     - Run python script to get times for each edge. Visual tool use this times in order to find the shortest way between two points.
+- Install and run Docker
+- Build Docker image with graphormer/Dockerfile via run "docker build . -t graphormer" in terminal
+- Run Docker container via run "docker run --rm -it -p 80:80 graphormer" in terminal
+- Run python script to get times for each edge. Visual tool use this times in order to find the shortest way between two points.
      
 ####  Python script:
       r = requests.post('http://0.0.0.0:80/get_weights', headers = {'Content-Type': 'application/json'})
