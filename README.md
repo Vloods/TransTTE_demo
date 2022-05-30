@@ -13,37 +13,40 @@ arXiv PDF: _to be added_.
 
 # Prerequisites
 
+It is possible to run Visual Tool and Graphormer locally, but we strongly recomend to use provided Dockerfiles
+
 **Backend:**
 
+```
+fastapi==0.67.0
+pydantic==1.8.2
+uvicorn==0.14.0
+pandas==1.3.4
+sklearn==0.0
+python-igraph==0.9.6
+loguru==0.5.3
+torch==1.9.1+cu111
+
+```
 
 **Model:**
 
-
-
 ```
-torch==1.9.1+cu111
-torchaudio 
-fastapi
-pydantic
-uvicorn
-pandas
-sklearn
-python-igraph
-loguru
-lmdb
-torch-scatter==2.0.9 
-torch-sparse==0.6.12 
+lmdb==1.3.0
+torch-scatter==2.0.9
+torch-sparse==0.6.12
 torch-geometric==1.7.2
 tensorboardX==2.4.1
 ogb==1.3.2
 rdkit-pypi==2021.9.3
-dgl==0.7.2 
-igraph
-fairseq
-setuptools==59.5.0
-numpy
-requests
+dgl==0.7.2
+igraph==0.9.10
+setuptools==0.1.96
+numpy==1.20.3
+
 ```
+Also you need to install [fairseq](https://github.com/facebookresearch/fairseq) to fit graphormer
+
 
 # Local test
 
