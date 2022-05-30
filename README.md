@@ -49,9 +49,9 @@ requests
 
 **Prepare repository, data and weights:**
 - Clone repository: ```git clone https://github.com/Vloods/TransTTE_demo```
-- Download [backend data](https://disk.yandex.ru/d/NHj3ukteUGn-dAA) and put it in backend/app/data
-- Download [graphormer datasets](https://disk.yandex.ru/d/RgWiqN7DwXcJOw) and put it in graphormer/app/datasets
+- Download [backend data](https://disk.yandex.ru/d/NHj3ukteUGn-dA) and put it in backend/app/data
 - Download [graphormer models](https://disk.yandex.ru/d/rQCIJs_7Q7Li6g) and put it in graphormer/app/models
+- In addition, you need to download geo-datasets to fit graphormer. However, it's a private data. Thus, if you want to fit graphormer localy, please [contact](semenova.bnl@gmail.com) us
 
 
 **How to run Visual Tool:**
