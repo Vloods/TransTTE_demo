@@ -54,7 +54,7 @@ Additionally, you need to install [fairseq](https://github.com/facebookresearch/
 - Clone repository: ```git clone https://github.com/Vloods/TransTTE_demo```
 - Download [backend data](https://disk.yandex.ru/d/NHj3ukteUGn-dA) and put it in backend/app/data
 - Download [graphormer models](https://disk.yandex.ru/d/rQCIJs_7Q7Li6g) and put it in graphormer/app/models
-- Download geo-datasets to fit graphormer (check the section below).
+- Download geo-datasets to fit graphormer (check the section below)
 
 
 **How to run Visual Tool:**
