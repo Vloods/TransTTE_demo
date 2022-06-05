@@ -45,7 +45,7 @@ setuptools==0.1.96
 numpy==1.20.3
 
 ```
-Also you need to install [fairseq](https://github.com/facebookresearch/fairseq) to fit graphormer
+Additionally, you need to install [fairseq](https://github.com/facebookresearch/fairseq) to fit graphormer.
 
 
 # Local test
@@ -54,7 +54,7 @@ Also you need to install [fairseq](https://github.com/facebookresearch/fairseq) 
 - Clone repository: ```git clone https://github.com/Vloods/TransTTE_demo```
 - Download [backend data](https://disk.yandex.ru/d/NHj3ukteUGn-dA) and put it in backend/app/data
 - Download [graphormer models](https://disk.yandex.ru/d/rQCIJs_7Q7Li6g) and put it in graphormer/app/models
-- In addition, you need to download geo-datasets to fit graphormer. However, it's a private data. Thus, if you want to fit graphormer localy, please [contact](semenova.bnl@gmail.com) us
+- Download geo-datasets to fit graphormer (check the section below).
 
 
 **How to run Visual Tool:**
