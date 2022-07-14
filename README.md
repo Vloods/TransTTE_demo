@@ -9,7 +9,7 @@ Natalia Semenova, Artyom Sosedka, Vladislav Tishin, Vladislav Zamkovoy, [Vadim P
 
 You can access inference of our model at [transtte.online](http://transtte.online)
 
-arXiv PDF: _to be added_.
+arXiv PDF: https://arxiv.org/abs/2207.05835
 
 # Prerequisites
 
