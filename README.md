@@ -112,6 +112,15 @@ If you have some questions about the code, you are welcome to open an issue, I w
 
 # Citation
 
+To be updated.
+
 ```
-To be added
+@misc{https://doi.org/10.48550/arxiv.2207.05835,
+  doi = {10.48550/ARXIV.2207.05835},
+  url = {https://arxiv.org/abs/2207.05835},
+  author = {Semenova, Natalia and Porvatov, Vadim and Tishin, Vladislav and Sosedka, Artyom and Zamkovoy, Vladislav},
+  title = {Logistics, Graphs, and Transformers: Towards improving Travel Time Estimation},
+  publisher = {arXiv},
+  year = {2022},
+}
 ```
