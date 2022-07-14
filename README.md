@@ -3,7 +3,7 @@
 ![Pipeline_image](resources/transtte_pipeline_wh.png#gh-light-mode-only)
 ![Pipeline_image](resources/transtte_pipeline_bl.png#gh-dark-mode-only)
 
-Welcome to the official repo of the TransTTE model -- transformer-based travel time estimation algorithm. Here we present the source code for PKDD'22 demo track paper "Logistics, Graphs, and Transformers: Towards improving Travel Time Estimation".
+Welcome to the official repo of the TransTTE model -- transformer-based travel time estimation algorithm. Here we present the source code for accepted PKDD'22 paper "Logistics, Graphs, and Transformers: Towards improving Travel Time Estimation".
 
 Natalia Semenova, Artyom Sosedka, Vladislav Tishin, Vladislav Zamkovoy, [Vadim Porvatov](https://www.researchgate.net/profile/Vadim-Porvatov)
 
