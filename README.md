@@ -104,7 +104,7 @@ Provided data could be used for research purposes only. If you want to incorpora
 
 # License
 
-Established code released as open-source software under the MIT license.
+Established code released as open-source software under the GPLv3 license.
 
 # Contact us
 
